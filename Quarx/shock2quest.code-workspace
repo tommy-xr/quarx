@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../shock2quest"
+		},
+		{
+			"path": "../../../personal"
+		}
+	],
+	"settings": {
+		"rust-analyzer.showUnlinkedFileNotification": false
+	}
+}

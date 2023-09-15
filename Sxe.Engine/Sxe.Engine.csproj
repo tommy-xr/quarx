@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{D71B8DED-0511-4747-A4D7-78772D69FA9B}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sxe.Engine</RootNamespace>
+    <AssemblyName>Sxe.Engine</AssemblyName>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>7972d5f3-47e9-432f-bf6e-ad6aca653f32</XnaCrossPlatformGroupID>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <StartupObject>
+    </StartupObject>
+    <XnaUpgrade>1</XnaUpgrade>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <XnaOutputType>Library</XnaOutputType>
+    <XnaProfile>HiDef</XnaProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE%3bWINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sxe.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SXE.Library\bin\Debug\Sxe.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnarchySettings.cs" />
+    <Compile Include="Audio\AudioComponent.cs" />
+    <Compile Include="Design\BaseContentNameConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignerHitResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignerItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DesignerUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FontContentNameConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FontPicker\SpriteFontPickerDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\FontPicker\SpriteFontPickerDropDown.Designer.cs">
+      <DependentUpon>SpriteFontPickerDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\FontPicker\UISpriteFontTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\GraphicsDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\GraphicsDeviceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ImagePicker\ImagePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ImagePicker\ImagePicker.Designer.cs">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ImagePicker\PathNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ImagePicker\TexturePickerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ImagePicker\UIImageTypeEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\PanelContainerDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\PanelContainerRootDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\PanelDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\Scheme\SchemeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\ServiceContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\TextureContentNameConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\TimeSpanConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\EntityManager.cs" />
+    <Compile Include="Entity\EntityModule.cs" />
+    <Compile Include="Entity\EntityModuleCollection.cs" />
+    <Compile Include="Entity\Modules\FbxRenderEntityModule.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gamers\AnarchyGamer.cs" />
+    <Compile Include="Gamers\AnarchyGamerComponent.cs" />
+    <Compile Include="Gamers\AnarchyGamerDefaults.cs" />
+    <Compile Include="Gamers\AnarchyGamerEvents.cs" />
+    <Compile Include="Gamers\AnarchyGamerStatic.cs" />
+    <Compile Include="Gamers\AnarchyTemporaryGamer.cs" />
+    <Compile Include="Gamers\BaseAIGamer.cs" />
+    <Compile Include="Gamers\BaseAnarchyGamer.cs" />
+    <Compile Include="Gamers\DefaultScreens\DefaultControllerDisconnectScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gamers\DefaultScreens\DefaultSignInScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gamers\IAnarchyGamer.cs" />
+    <Compile Include="Gamers\IAnarchyGamerService.cs" />
+    <Compile Include="Storage\IIsComplete.cs" />
+    <Compile Include="Storage\IStorageDeviceService.cs" />
+    <Compile Include="Storage\LoadResult.cs" />
+    <Compile Include="Storage\SaveData.cs" />
+    <Compile Include="Gamers\SignInModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Input\FuzzControllerRandom.cs" />
+    <Compile Include="Input\RumbleManager.cs" />
+    <Compile Include="Loading\GlobalCache.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Graphics\Camera.cs" />
+    <Compile Include="Graphics\FreeRoamingCamera.cs" />
+    <Compile Include="Graphics\IRender2DService.cs" />
+    <Compile Include="Graphics\IRender3DService.cs" />
+    <Compile Include="Graphics\Render2DComponent.cs" />
+    <Compile Include="Graphics\Render3DComponent.cs" />
+    <Compile Include="Graphics\ResizeSpriteBatch.cs" />
+    <Compile Include="Graphics\SpriteInfo.cs" />
+    <Compile Include="Graphics\TextInfo.cs" />
+    <Compile Include="Input\BaseGameController.cs" />
+    <Compile Include="Input\BasicKeyboardInput.cs" />
+    <Compile Include="Input\BasicMouseInput.cs" />
+    <Compile Include="Input\ControllerCollection.cs" />
+    <Compile Include="Input\Cursor.cs" />
+    <Compile Include="Input\DefaultCursorScheme.cs" />
+    <Compile Include="Input\ICursorScheme.cs" />
+    <Compile Include="Input\IGameController.cs" />
+    <Compile Include="Input\IInputEventGenerator.cs" />
+    <Compile Include="Input\IInputService.cs" />
+    <Compile Include="Input\IKeyboardInput.cs" />
+    <Compile Include="Input\IMouseInput.cs" />
+    <Compile Include="Input\InputComponent.cs" />
+    <Compile Include="Input\InputEventGenerator.cs" />
+    <Compile Include="Input\InputEvents.cs" />
+    <Compile Include="Input\InputFilterMode.cs" />
+    <Compile Include="Input\ITextHandler.cs" />
+    <Compile Include="Input\KeyboardMouseGameController.cs" />
+    <Compile Include="Input\XboxGameController.cs" />
+    <Compile Include="IRecycleable.cs" />
+    <Compile Include="IRecycleList.cs" />
+    <Compile Include="Level\Level.cs" />
+    <Compile Include="Loading\GlobalContentLoader.cs" />
+    <Compile Include="Loading\ILoadable.cs" />
+    <Compile Include="Loading\ILoadableCollection.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RecyleList.cs" />
+    <Compile Include="Storage\StorageDeviceComponent.cs" />
+    <Compile Include="Storage\StorageDeviceMode.cs" />
+    <Compile Include="SxeDrawableGameComponent.cs" />
+    <Compile Include="SxeGame.cs" />
+    <Compile Include="SxeGameComponent.cs" />
+    <Compile Include="Test\Cases\Graphical\TestMenu.cs">
+    </Compile>
+    <Compile Include="Test\Cases\Graphical\Test1.cs">
+    </Compile>
+    <Compile Include="Test\Cases\Unit\FastTextureSpaceTests.cs" />
+    <Compile Include="Test\Cases\Unit\MathUtilitiesTest.cs" />
+    <Compile Include="Test\Cases\Unit\TestConsoleCommandParser.cs" />
+    <Compile Include="Test\Cases\Unit\TextureSpaceTests.cs" />
+    <Compile Include="Test\Framework\Assert.cs" />
+    <Compile Include="Test\Framework\Attributes.cs" />
+    <Compile Include="Test\Framework\GraphicalTestFormNodes.cs" />
+    <Compile Include="Test\Framework\GraphicalTestInfo.cs" />
+    <Compile Include="Test\Framework\GraphicalTestSuite.cs" />
+    <Compile Include="Test\Framework\GraphicalTestForm.cs">
+    </Compile>
+    <Compile Include="Test\Framework\SxeTestException.cs" />
+    <Compile Include="Test\Framework\UnitTestCaseInfo.cs" />
+    <Compile Include="Test\Framework\UnitTestSuite.cs" />
+    <Compile Include="Test\Cases\Unit\TestClass.cs" />
+    <Compile Include="Test\Framework\UnitTestFixtureInfo.cs" />
+    <Compile Include="Test\Framework\TestForm.cs">
+    </Compile>
+    <Compile Include="Test\Framework\TestFormNodes.cs" />
+    <Compile Include="UI\BaseSliderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\BorderPanel.cs" />
+    <Compile Include="UI\Buttons\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Buttons\Button_old.cs">
+    </Compile>
+    <Compile Include="UI\Buttons\ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Buttons\ColorButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Checkbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ComboBox.cs">
+    </Compile>
+    <Compile Include="UI\CompositePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DefaultScheme.cs" />
+    <Compile Include="UI\DraggablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Editor\EditableLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Editor\EditablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Editor\EditForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\EventList.cs" />
+    <Compile Include="UI\Forms\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\OldForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormCollection.cs" />
+    <Compile Include="UI\Forms\GlobalForms.cs" />
+    <Compile Include="UI\Forms\TestForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Gamescreens\BaseScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Gamescreens\FormScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Gamescreens\LoadingScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Gamescreens\MessageScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Gamescreens\ScreenManager.cs" />
+    <Compile Include="UI\Gamescreens\ScreenState.cs" />
+    <Compile Include="UI\Gamescreens\IGameScreen.cs" />
+    <Compile Include="UI\Gamescreens\IGameScreenService.cs" />
+    <Compile Include="UI\Gamescreens\TestScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Editor\IEditable.cs" />
+    <Compile Include="UI\Buttons\IButton.cs" />
+    <Compile Include="UI\IInputEventHandler.cs" />
+    <Compile Include="UI\Images\AnimatedImage.cs" />
+    <Compile Include="UI\Images\OscillatingImage.cs" />
+    <Compile Include="UI\IPanelContainer.cs" />
+    <Compile Include="UI\IScheme.cs" />
+    <Compile Include="UI\IVisible.cs" />
+    <Compile Include="UI\ListPanel.cs">
+    </Compile>
+    <Compile Include="UI\Menu\MenuGroupMode.cs" />
+    <Compile Include="UI\Menu\MenuOption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Menu\IMenuEntry.cs" />
+    <Compile Include="UI\Menu\MenuGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Menu\MenuSelectionCriteria.cs" />
+    <Compile Include="UI\OscillatingPanel.cs">
+    </Compile>
+    <Compile Include="UI\PanelContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PropertyGrid.cs">
+    </Compile>
+    <Compile Include="UI\ReloadContentAttribute.cs" />
+    <Compile Include="UI\Scheme\IScheme.cs" />
+    <Compile Include="UI\Scheme\ISchemeManager.cs" />
+    <Compile Include="UI\Scheme\Scheme.cs" />
+    <Compile Include="UI\Scheme\SchemeManager.cs" />
+    <Compile Include="UI\ScrollablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\MultiLineLabel.cs">
+    </Compile>
+    <Compile Include="UI\Specialized\BaseControllerDisconnectScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Specialized\BaseLoadingScreen.cs">
+    </Compile>
+    <Compile Include="UI\Specialized\BaseSignInScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\SplitPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TextBox.cs">
+    </Compile>
+    <Compile Include="UI\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormTitleBarPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\SliderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TreeNode.cs" />
+    <Compile Include="UI\TreeView.cs">
+    </Compile>
+    <Compile Include="UI\Images\UIImage.cs" />
+    <Compile Include="UI\VerticalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\XboxMenu\IXboxMessageService.cs" />
+    <Compile Include="UI\XboxMenu\XboxMessageEventArgs.cs" />
+    <Compile Include="UI\XboxMenu\XboxMessageComponent.cs" />
+    <Compile Include="UI\XboxMenu\XboxMessageInfo.cs" />
+    <Compile Include="Utilities\Console\BaseCommandHandler.cs" />
+    <Compile Include="Utilities\Console\ConsoleCommandParser.cs" />
+    <Compile Include="Utilities\Console\ConsoleComponent.cs" />
+    <Compile Include="Utilities\Console\ConsoleEventArgs.cs" />
+    <Compile Include="Utilities\Console\ConsoleForm.cs">
+    </Compile>
+    <Compile Include="Utilities\Console\EngineCommandHandler.cs" />
+    <Compile Include="Utilities\Console\IConsoleCommandHandler.cs" />
+    <Compile Include="Utilities\Console\IConsoleService.cs" />
+    <Compile Include="Utilities\FpsComponent.cs" />
+    <Compile Include="Utilities\Performance\PeformanceForm.cs">
+    </Compile>
+    <Compile Include="Utilities\Performance\PerformanceNode.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>537ee5b8-7af9-4ed4-b687-4dce3467a4e8</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Design\FontPicker\SpriteFontPickerDropDown.resx">
+      <DependentUpon>SpriteFontPickerDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ImagePicker\ImagePicker.resx">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamers\DefaultScreens\DefaultControllerDisconnectScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DefaultControllerDisconnectScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamers\DefaultScreens\DefaultSignInScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DefaultSignInScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\Form.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\TestForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Gamescreens\LoadingScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4A1AD51D-E77D-4008-A830-DB16A562FD96}</ProjectGuid>
+    <ProjectTypeGuids>{2DF5C3F4-5A5F-47a9-8E94-23B4456F55E2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sxe.Engine</RootNamespace>
+    <AssemblyName>Sxe.Engine</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaCrossPlatformGroupID>7972d5f3-47e9-432f-bf6e-ad6aca653f32</XnaCrossPlatformGroupID>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Graphics\Camera.cs" />
+    <Compile Include="Graphics\IRender2DService.cs" />
+    <Compile Include="Graphics\Render2DComponent.cs" />
+    <Compile Include="Graphics\SpriteInfo.cs" />
+    <Compile Include="Graphics\Test9000.cs" />
+    <Compile Include="Graphics\TextInfo.cs" />
+    <Compile Include="Input\BaseGameController.cs" />
+    <Compile Include="Input\BasicKeyboardInput.cs" />
+    <Compile Include="Input\BasicMouseInput.cs" />
+    <Compile Include="Input\Cursor.cs" />
+    <Compile Include="Input\DefaultCursorScheme.cs" />
+    <Compile Include="Input\ICursorScheme.cs" />
+    <Compile Include="Input\IGameController.cs" />
+    <Compile Include="Input\IInputEventGenerator.cs" />
+    <Compile Include="Input\IInputService.cs" />
+    <Compile Include="Input\IKeyboardInput.cs" />
+    <Compile Include="Input\IMouseInput.cs" />
+    <Compile Include="Input\InputComponent.cs" />
+    <Compile Include="Input\InputEventGenerator.cs" />
+    <Compile Include="Input\InputEvents.cs" />
+    <Compile Include="Input\ITextHandler.cs" />
+    <Compile Include="Input\KeyboardMouseGameController.cs" />
+    <Compile Include="Input\XboxGameController.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Test\Cases\Graphical\Test1.cs" />
+    <Compile Include="Test\Cases\Unit\TestConsoleCommandParser.cs" />
+    <Compile Include="Test\Framework\Assert.cs" />
+    <Compile Include="Test\Framework\Attributes.cs" />
+    <Compile Include="Test\Framework\GraphicalTestFormNodes.cs" />
+    <Compile Include="Test\Framework\GraphicalTestInfo.cs" />
+    <Compile Include="Test\Framework\GraphicalTestSuite.cs" />
+    <Compile Include="Test\Framework\GraphicalTestForm.cs" />
+    <Compile Include="Test\Framework\SxeTestException.cs" />
+    <Compile Include="Test\Framework\UnitTestCaseInfo.cs" />
+    <Compile Include="Test\Framework\UnitTestSuite.cs" />
+    <Compile Include="Test\Cases\Unit\TestClass.cs" />
+    <Compile Include="Test\Framework\UnitTestFixtureInfo.cs" />
+    <Compile Include="Test\Framework\TestForm.cs" />
+    <Compile Include="Test\Framework\TestFormNodes.cs" />
+    <Compile Include="UI\BaseSliderControl.cs" />
+    <Compile Include="UI\BorderPanel.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\Checkbox.cs" />
+    <Compile Include="UI\ComboBox.cs" />
+    <Compile Include="UI\DefaultScheme.cs" />
+    <Compile Include="UI\EventList.cs" />
+    <Compile Include="UI\Form.cs" />
+    <Compile Include="UI\FormCollection.cs" />
+    <Compile Include="UI\Gamescreens\BaseScreen.cs" />
+    <Compile Include="UI\Gamescreens\Screen.cs" />
+    <Compile Include="UI\Gamescreens\GameScreenComponent.cs" />
+    <Compile Include="UI\Gamescreens\IGameScreen.cs" />
+    <Compile Include="UI\Gamescreens\IGameScreenService.cs" />
+    <Compile Include="UI\Gamescreens\TestScreen.cs" />
+    <Compile Include="UI\IInputEventHandler.cs" />
+    <Compile Include="UI\IPanelContainer.cs" />
+    <Compile Include="UI\IScheme.cs" />
+    <Compile Include="UI\ListControl.cs" />
+    <Compile Include="UI\PropertyGrid.cs" />
+    <Compile Include="UI\ScrollablePanel.cs" />
+    <Compile Include="UI\Label.cs" />
+    <Compile Include="UI\MultiLineLabel.cs" />
+    <Compile Include="UI\TabControl.cs" />
+    <Compile Include="UI\TextBox.cs" />
+    <Compile Include="UI\Panel.cs" />
+    <Compile Include="UI\FormTitleBarPanel.cs" />
+    <Compile Include="UI\SliderControl.cs" />
+    <Compile Include="UI\TreeNode.cs" />
+    <Compile Include="UI\TreeView.cs" />
+    <Compile Include="UI\UIImage.cs" />
+    <Compile Include="UI\VerticalScrollbar.cs" />
+    <Compile Include="Utilities\Console\BaseCommandHandler.cs" />
+    <Compile Include="Utilities\Console\ConsoleCommandParser.cs" />
+    <Compile Include="Utilities\Console\ConsoleComponent.cs" />
+    <Compile Include="Utilities\Console\ConsoleEventArgs.cs" />
+    <Compile Include="Utilities\Console\ConsoleForm.cs" />
+    <Compile Include="Utilities\Console\EngineCommandHandler.cs" />
+    <Compile Include="Utilities\Console\IConsoleCommandHandler.cs" />
+    <Compile Include="Utilities\Console\IConsoleService.cs" />
+    <Compile Include="Utilities\FpsComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>537ee5b8-7af9-4ed4-b687-4dce3467a4e8</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SXE.Library\Sxe.Library.csproj">
+      <Project>{017302BF-37F8-44CD-B7FC-BE5BEE912B3E}</Project>
+      <Name>Sxe.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

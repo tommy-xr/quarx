@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary>
+	<Words>
+		<Unrecognized />
+		<Recognized>
+			<Word>xna</Word>
+			<Word>fxcop</Word>
+			<Word>shader</Word>
+			<Word>shaders</Word>
+			<Word>specular</Word>
+			<Word>multi</Word>
+			<Word>fullscreen</Word>
+			<Word>sxe</Word>
+			<Word>bsp</Word>
+			<Word>binormal</Word>
+			<Word>binormals</Word>
+			<Word>tbn</Word>
+			<Word>coords</Word>
+			<Word>tex</Word>
+			<Word>tbn</Word>
+			<Word>multi</Word>
+		</Recognized>
+		<Deprecated />
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<Acronym>XNA</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>
